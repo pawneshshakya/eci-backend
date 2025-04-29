@@ -2,7 +2,6 @@ const User = require("../models/userModel");
 
 // Get all users (for admin only)
 const getUsers = async (req, res) => {
-  console.log("object");
   try {
     const users = await User.find();
     res.status(200).json({
